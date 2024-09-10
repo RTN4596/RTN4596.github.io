@@ -1,0 +1,133 @@
+body {
+    margin: 0%;
+    background-color: #AD2831;;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    background-color: #383D3B;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 5px 10px black, 0px 10px 30px black;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Bona Nova SC", serif;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: "Arsenal SC", Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tagline {
+    text-align: center;
+}
+
+section.splash > img {
+    border: 10px solid #AD2831;
+    border-radius: 10%;
+    width: 120px;
+}
+
+a {
+    color: #ADA8BE;
+    text-decoration: none;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    row-gap: 15px;
+}
+
+a:hover {
+    color: red;
+}
+
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    border: 5px solid #AD2831;
+}
+
+hr {
+    border-width: 2px;
+    border-color: #ADA8BE;
+}
+
+.card {
+    background-color: gray;
+    padding: 5px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+.card > ul li {
+    text-align: left;
+}
+
+.card > img {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+}
+
+.one-col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#sub {
+    max-width: fit-content;
+}
+
+input, textarea {
+    max-width: 50%;
+    border-color: #AD2831;
+    border-width: 5px;
+    border-style: groove;
+}

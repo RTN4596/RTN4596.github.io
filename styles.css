@@ -77,8 +77,8 @@ a:hover {
 
 .three-col {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
 }
 
 .info {
@@ -108,9 +108,9 @@ hr {
     text-align: left;
 }
 
-.card > img {
-    height: 120px;
-    width: 120px;
+.three-col > img {
+    height: 500px;
+    width: 400px;
     text-align: center;
 }
 

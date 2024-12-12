@@ -79,6 +79,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 30px;
+    text-align: center;
 }
 
 .info {
@@ -109,9 +110,18 @@ hr {
 }
 
 .three-col > img {
-    height: 500px;
-    width: 400px;
+    
     text-align: center;
+}
+
+#trivia {
+    height: 400px;
+    width: 350px;
+}
+
+#dining {
+    height: 320px;
+    width: 400px;
 }
 
 .one-col {

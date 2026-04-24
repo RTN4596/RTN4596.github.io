@@ -4,129 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Nevin</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <p><a href="contact.html">Contact Tyler</a></p>
-    </nav>
-    <div class="main">
-        <section class="splash">
-            <h1>Tyler Nevin</h1>
-            <img src="images/me.jpeg" alt="Picture of Tyler">
-            <p>110 International Dr &#x2022; (912)674-8414 &#x2022; rtn05056@uga.edu</p>
-            <p id="tagline">I am an aspiring programmer interested in working in the vast field of Computer Science.
-                I want to build a stable and lasting career as well as working in the field that I enjoy.
-            </p>
-        </section>
-        <hr>
-        <div class="info">
-            <section class="box">
-                <h2>Education</h2>
-                <p>University of Georgia, Bachelor of Science in Computer Science May 2026, GPA: 3.57
-                </p>
-                <p>Certificate: New Media</p>
-                Courses:
-                <ul>
-                    <li>
-                        Introduction to Computing and Programming
-                    </li>
-                    <li>
-                        Data Structures
-                    </li>
-                    <li>
-                        Discrete Mathematics
-                    </li>
-                    <li>
-                        Native App Development
-                    </li>
-                    <li>
-                        Systems Programming
-                    </li>
-                    <li>
-                        Web Programming
-                    </li>
-                </ul>
-            </section>
-            <section class="box">
-                <h2>Honors and Awards</h2>
-                <dl>
-                    <dt>Zell Miller Scholarship Recipient</dt> <dd>Fall 2022 - Fall 2024</dd>
-                    <dt>Dean's List</dt> <dd>Spring 2023</dd>
-                </dl>
-            </section>
-            <section class="box">
-                <h2>Skills</h2>
-                <ul>
-                    <li>
-                        Programming Languages: HTML, CSS, Java, JavaScript, Swift
-                    </li> 
-                    <li>  
-                        Frameworks / Libraries: Node.js, React
-                    </li>
-                    <li>
-                        Software: Git, VS Code, Eclipse, mobaXterm, Emacs
-                    </li>
-                </ul>
-            </section>
-            <section class="box">
-                <h2>Campus Involvement</h2>
-                <dl>
-                    <dt>DevDawgs member and Project Contributor</dt> <dd>Fall 2024 - Present</dd>
-                    <dt>ACM member</dt> <dd>Fall 2023 - Present</dd>
-                    <dt>UGAHacks Hackathon Participant</dt> <dd>Spring 2023</dd>
-                </dl>
-            </section>
+    <header class="site-nav">
+        <div class="site-nav__inner">
+            <a class="site-nav__name" href="#top">Tyler Nevin</a>
+            <nav class="site-nav__links" aria-label="Page sections">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#campus">Campus</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <section>
-            <h2>Projects</h2>
-            <div class="three-col">
-                <img id="trivia" src="images/TriviaApp.png" alt="Trivia App">
-                <div class="card">
-                    <h3>SwiftUI Trivia App</h3>
-                    <ul>
-                        <li>
-                            Developed a trivia app using SwiftUI and Firebase for a final project
-                        </li>
-                        <li>
-                            Allows user to sign up and then take quizzes based on a specified category and difficulty
-                        </li>
-                        <li>
-                            Authenticates users on sign-in and allows them to view thier stats by pulling from the database
-                        </li>
-                        <li>
-                            Pulls 10 random questions from an API and displays them one-by-one to the user
-                        </li>
-                    </ul>
+    </header>
+
+    <main id="top">
+        <section id="about" class="hero" aria-labelledby="about-heading">
+            <figure class="hero__photo">
+                <img src="images/profme.JPG" width="400" height="400" alt="Portrait of Tyler Nevin">
+            </figure>
+            <div class="hero__content">
+                <h1 id="about-heading" class="hero__title">Tyler Nevin</h1>
+                <p class="hero__meta">
+                    <a href="tel:+19126748414">(912) 674-8414</a>
+                    <span aria-hidden="true"> · </span>
+                    <a href="mailto:rtn05056@uga.edu">rtn05056@uga.edu</a>
+                </p>
+                <p class="hero__bio">
+                    I am an aspiring programmer interested in working in the vast field of Computer Science.
+                    I want to build a stable and lasting career as well as working in the field that I enjoy.
+                </p>
+            </div>
+        </section>
+
+        <section id="education" aria-labelledby="education-heading">
+            <p class="section-title">Background</p>
+            <h2 id="education-heading" class="section-heading">Education</h2>
+            <div class="prose">
+                <p>
+                    <strong>University of Georgia</strong> — Bachelor of Science in Computer Science, expected May 2026.
+                    GPA: 3.57. Certificate: New Media.
+                </p>
+                <p class="section-title" style="margin-top: 1.25rem; margin-bottom: 0.5rem;">Relevant coursework</p>
+                <ul class="course-list">
+                    <li>Introduction to Computing and Programming</li>
+                    <li>Data Structures</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Native App Development</li>
+                    <li>Systems Programming</li>
+                    <li>Web Programming</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="honors" aria-labelledby="honors-heading">
+            <p class="section-title">Recognition</p>
+            <h2 id="honors-heading" class="section-heading">Honors and awards</h2>
+            <dl class="honors-dl">
+                <dt>Zell Miller Scholarship Recipient</dt>
+                <dd>Fall 2022 – Fall 2024</dd>
+                <dt>Dean’s List</dt>
+                <dd>Spring 2023</dd>
+            </dl>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <p class="section-title">Toolkit</p>
+            <h2 id="skills-heading" class="section-heading">Skills</h2>
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <div class="pills">
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">Java</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">Swift</span>
                 </div>
-                <img id="dining" src="images/DiningReview.png" alt="Dining Hall Review Website">
-                <div class="card">
-                    <h3>Dining Hall Review Website</h3>
-                    <ul>
-                        <li>
-                            Worked on a team of 4 to develop a website to review the dining halls here at The University of Georgia
-                        </li>
-                        <li>
-                            Utilized React through NextJS and used MongoDB to store data
-                        </li>
-                        <li>
-                            Spearheaded the implementation of Authentication/Authorization in the project using JWT
-                        </li>
-                        <li>
-                            Worked on routing and implemented middleware, as well as signup functionality through a POST method
-                        </li>
-                    </ul>
+            </div>
+            <div class="skill-group">
+                <h3>Frameworks and libraries</h3>
+                <div class="pills">
+                    <span class="pill">Node.js</span>
+                    <span class="pill">React</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>Tools</h3>
+                <div class="pills">
+                    <span class="pill pill--muted">Git</span>
+                    <span class="pill pill--muted">VS Code</span>
+                    <span class="pill pill--muted">Eclipse</span>
+                    <span class="pill pill--muted">MobaXterm</span>
+                    <span class="pill pill--muted">Emacs</span>
                 </div>
             </div>
         </section>
-    </div>
-    <footer>
-        &copy; <a href="contact.html">Tyler Nevin</a> &#x2022; <a href="https://www.linkedin.com/in/robert-nevin-4a1290292/"><i class="fab fa-linkedin-in"></i></a>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <p class="section-title">Work</p>
+            <h2 id="projects-heading" class="section-heading">Projects</h2>
+            <div class="projects-stack">
+                <!-- Replace href with your SwiftUI Trivia project URL (GitHub, demo, etc.) -->
+                <a class="project-card" href="https://example.com/your-trivia-project" target="_blank" rel="noopener noreferrer">
+                    <figure class="project-card__media">
+                        <img src="images/TriviaApp.png" alt="Screenshots of the SwiftUI trivia application">
+                    </figure>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">SwiftUI Trivia App</h3>
+                        <p class="project-card__hint">View project →</p>
+                        <p class="project-card__desc">
+                            A native trivia app built with SwiftUI and Firebase: sign up, pick category and difficulty,
+                            answer ten API-driven questions, and review your stats from the database—with auth on sign-in.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Replace href with your Dining Hall Review project URL -->
+                <a class="project-card" href="https://example.com/your-dining-project" target="_blank" rel="noopener noreferrer">
+                    <figure class="project-card__media">
+                        <img src="images/DiningReview.png" alt="Screenshots of the dining hall review website">
+                    </figure>
+                    <div class="project-card__body">
+                        <h3 class="project-card__title">Dining Hall Review Website</h3>
+                        <p class="project-card__hint">View project →</p>
+                        <p class="project-card__desc">
+                            Team-built site for reviewing UGA dining halls using React and Next.js with MongoDB.
+                            I led authentication and authorization with JWT, routing and middleware, and signup via POST.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="campus" aria-labelledby="campus-heading">
+            <p class="section-title">Community</p>
+            <h2 id="campus-heading" class="section-heading">Campus involvement</h2>
+            <ul class="campus-list">
+                <li class="campus-item">
+                    <p class="campus-item__title">DevDawgs — member and project contributor</p>
+                    <p class="campus-item__dates">Fall 2024 – present</p>
+                </li>
+                <li class="campus-item">
+                    <p class="campus-item__title">ACM — member</p>
+                    <p class="campus-item__dates">Fall 2023 – present</p>
+                </li>
+                <li class="campus-item">
+                    <p class="campus-item__title">UGAHacks — hackathon participant</p>
+                    <p class="campus-item__dates">Spring 2023</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        &copy; Tyler Nevin
+        <span aria-hidden="true"> · </span>
+        <a href="contact.html">Contact</a>
+        <span aria-hidden="true"> · </span>
+        <a href="https://www.linkedin.com/in/robert-nevin-4a1290292/" class="icon-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </footer>
 </body>
 </html>

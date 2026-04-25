@@ -1,11 +1,13 @@
-/* --- Tokens (#E2D4BA, #CCC7B9, #AF7A6D, #653239; border uses 653239 tint) --- */
+/* --- Tokens (#E2D4BA, #CCC7B9, #AF7A6D, #8A5653, #653239; border uses 653239 tint) --- */
 :root {
     --bg: #e2d4ba;
     --surface: #ccc7b9;
+    --card-surface: rgba(138, 86, 83, 0.12);
     --text: #653239;
     --text-muted: #af7a6d;
     --border: rgba(101, 50, 57, 0.22);
     --accent: #af7a6d;
+    --accent-mid: #8a5653;
     --accent-strong: #653239;
     --accent-soft: #ccc7b9;
     --text-on-burgundy: #ccc7b9;
@@ -248,12 +250,12 @@ section:first-of-type {
 .pill {
     display: inline-block;
     padding: 0.35rem 0.75rem;
-    background: var(--surface);
+    background: rgba(101, 50, 57, 0.07);
     color: var(--text);
     border-radius: 999px;
     font-size: 0.85rem;
     font-weight: 500;
-    border: 1px solid transparent;
+    border: 1px solid var(--border);
 }
 
 .pill--muted {
@@ -291,7 +293,7 @@ section:first-of-type {
     grid-template-columns: 1fr;
     grid-template-rows: 200px 1fr;
     gap: 0;
-    background: var(--surface);
+    background: var(--card-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
@@ -332,7 +334,7 @@ section:first-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--surface);
+    background: var(--card-surface);
     height: 200px;
     min-height: 200px;
     padding: 0.5rem;
@@ -377,7 +379,7 @@ section:first-of-type {
 .project-card__hint {
     font-size: 0.8rem;
     font-weight: 500;
-    color: var(--accent-strong);
+    color: var(--accent-mid);
     margin: 0 0 0.65rem;
 }
 
@@ -404,7 +406,7 @@ section:first-of-type {
 
 .campus-item {
     padding: 1rem 1.15rem;
-    background: var(--surface);
+    background: var(--card-surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     display: grid;
